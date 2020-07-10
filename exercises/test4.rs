@@ -5,7 +5,11 @@
 
 // Write a macro that passes the test! No hints this time, you can do it!
 
-// I AM NOT DONE
+macro_rules! my_macro {
+    ($word:tt) => {
+        format!("Hello {}", $word)
+    };
+}
 
 #[cfg(test)]
 mod tests {
